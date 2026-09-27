@@ -222,6 +222,11 @@ nav ul li a.ativo {
     margin-bottom: 1.5rem;
 }
 
+.fig-pequena img {
+    max-width: 260px;
+    margin: 0 auto;
+}
+
 /* SOBRE (âncoras internas) */
 .ancoras {
     display: flex;
@@ -247,6 +252,10 @@ nav ul li a.ativo {
 
 .bloco {
     margin-bottom: 2.5rem;
+}
+
+.img-sombra {
+    box-shadow: 0 10px 25px rgba(13, 27, 42, 0.3);
 }
 
 .lista-impactos {
@@ -324,6 +333,14 @@ nav ul li a.ativo {
     color: #1b263b;
 }
 
+.lista-alunos {
+    list-style: square;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
 .creditos-box hr {
     margin: 20px 0;
     border: 0;
@@ -377,8 +394,21 @@ nav ul li a.ativo {
     resize: none;
 }
 
-.contato-form .btn {
+.form-botoes {
+    display: flex;
+    gap: 1rem;
     align-self: flex-start;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #0077b6;
+    border: 2px solid #00b4d8;
+}
+
+.btn-secundario:hover {
+    background-color: #00b4d8;
+    color: #fff;
 }
 
 .status {
@@ -390,13 +420,36 @@ nav ul li a.ativo {
 .status.erro { color: #c62828; }
 .status.ok { color: #2e7d32; }
 
-/* FOOTER */
+/* FOOTER + BOTÃO VOLTAR AO TOPO (fica ao lado do rodapé, sem alterar o rodapé) */
+.rodape-wrapper {
+    margin-top: auto;
+}
+
 footer {
     background-color: #0d1b2a;
     color: #e0e1dd;
     text-align: center;
     padding: 1.5rem;
-    margin-top: auto;
+}
+
+.ancora-img {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: inline-block;
+    line-height: 0;
+    z-index: 1000;
+}
+
+.ancora-img img {
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s;
+}
+
+.ancora-img:hover img {
+    transform: translateY(-4px);
 }
 
 /* RESPONSIVO */
