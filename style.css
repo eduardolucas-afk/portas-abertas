@@ -433,9 +433,11 @@ footer {
 }
 
 .ancora-img {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+    position: fixed !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    left: auto !important;
+    top: auto !important;
     display: inline-block;
     line-height: 0;
     z-index: 1000;
